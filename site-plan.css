@@ -6,10 +6,10 @@ Fonts are separated by a | */
 
 :root {
   /* change the values below to your colors from your palette */
-  --primary-color: #396E94;
-  --secondary-color: #E7C24F;
-  --accent1-color: #A43312;
-  --accent2-color: white;
+  --primary-color: #62039c;
+  --secondary-color: #9D4EDD;
+  --accent1-color: #FE6C00;
+  --accent2-color: #FF9747;
 
   /* change the values below to your chosen font(s) */
   --heading-font: Cutive, serif;
@@ -21,10 +21,10 @@ Fonts are separated by a | */
   --paragraph-color-on-white: black; /* paragraph text on a white background */ 
   --paragraph-color-on-color: white; /* paragraph text on a colored background */ 
   --paragraph-background-color: black;
-  --nav-link-color: #396E94;
-  --nav-background-color: #E7C24F;
-  --nav-hover-link-color: #E7C24F;
-  --nav-hover-background-color: #396E94;
+  --nav-link-color: #FFFFFF;
+  --nav-background-color: #9D4EDD;
+  --nav-hover-link-color: #FFFFFF;
+  --nav-hover-background-color: #62039c;
 }
 
 
@@ -110,6 +110,8 @@ nav a {
   min-width: 70px;
   text-decoration: none;
   text-transform: uppercase;
+  font-weight: bold;
+  font-family: var(--heading-font);
 }
 nav a:link, nav a:visited {
   color: var(--nav-link-color);
