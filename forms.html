@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SmartCode | Home</title>
+  <!-- <link rel="stylesheet" href="style.css"> -->
+  <style>
+      /* Form Exercise */
+    #feedback {
+    background-color: antiquewhite;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: .5em;
+    /* make this element invisible until we are ready for it */
+    display: none;
+        
+    }
+    .moveDown {
+    margin-top: 3em;
+    }
+    form {
+        /* center the form to the center of the page */
+        margin: 0 auto;
+        max-width: 500px;
+        /* form outloine */
+        padding: 1em;
+        border: 1px solid #CCC;
+        border-radius: 1em;
+    }
+    ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+    form li + li {
+        margin-top: 1em;
+    }
+    label {
+        /* unifomr size & aligmnet */
+        display: inline-block;
+        width: 90px;
+        text-align: right;
+    }
+    input, textarea {
+        /* make sure all fields have the same font
+        by default, textarea have monospace font */
+        font: 1em sans-serif;
+
+        /* Uniform text field size */
+        width: 300px;
+        box-sizing: border-box;
+
+        /* uniform form field borders */
+        border: 1px solid #999;
+
+        /* give some space between borders
+        and the text of the form */
+        padding: .3em;
+    }
+    input:focus, textarea:focus {
+        /* additional highlight for focus
+        elements */
+        border-color: #000;
+    }
+    textarea {
+        /* align multiple text fileds
+        with their labels */
+        vertical-align: top;
+
+        /* provide space to type some text */
+        height: 5em;
+    }
+    .button {
+        /* align buttong with
+        the text fields */
+        padding-left: 90px; /* same size as labels */
+    }
+    button {
+        /* this extra field represent roughly the same
+        space as the space between the labels and their
+        text fileds */
+        margin-left: .5em;
+        padding: 1em;
+    }
+
+    /* Flexbox navbar practice */
+    nav {
+        max-width: 75%;
+        margin: 0 auto;
+        background: linear-gradient(90deg, rgba(255,255,255,1) 25%, rgba(157,78,221,1) 63%, rgba(157,78,221,1) 100%);
+        border-radius: 15px;
+    }
+    .logo {
+        display: inline-block;
+        background-color: white;
+    }
+    .logo img {
+        vertical-align: middle;
+    }
+    .nav-item a {
+        display: inline-block;
+        padding: .4em .9em;
+        text-decoration: none;
+        font-size: 1.3em;
+        color: white;
+    }
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .nav-links {
+        display: flex;
+        padding: 1em;
+        color: white;
+    }
+    .nav-item {
+        display: flex;
+    }
+    .nav-item:hover {
+        background-color: #62039c;
+        padding: .5em;
+    }
+
+  </style>
+</head>
+
+<body>
+  <!-- navbar -->
+  <header>
+    <nav class="navbar">
+        <a href="/" class="logo">
+            <img src="./img/landscape_logo.png" alt="SmartCode Logo">
+          </a>
+        <ul class="nav-links">
+          <li class="nav-item"><a href="/">Home</a></li>
+          <li class="nav-item"><a href="aboutus.html">About Us</a></li>
+          <li class="nav-item"><a href="#">Contact Us</a></li>
+        </ul>
+      </nav>
+    <div class="container">
+      <h1>Get in touch with us</h1>
+      <p>We are happy to hear from you. Please feel free to leave us a message. Our team will be in touch soon.</p>
+    </div>
+    <div class="pic-shadow"></div>
+  </header>
+  <main>
+      <!-- Code to dispay form submit message -->
+      <div id="feedback"></div>
+      <!-- MDN Form tutorial -->
+      <form action="/my-handling-form-page" method="post">
+          <!-- align here -->
+          <ul>
+              <li>
+                  <label for="name">Name:</label>
+                  <input type="text" id="name" name="user_name">
+              </li>
+              <li>
+                  <label for="email">Email:</label>
+                  <input type="email" id="email" name="user_email" placeholder="username@domain.com">
+              </li>
+              <li>
+                  <label for="msg">Message:</label>
+                  <textarea name="user_message" id="msg"></textarea>
+              </li>
+              <li class="button">
+                  <button type="submit">Send your message</button>
+              </li>
+          </ul>
+      </form>
+  </main>
+  <footer>
+    <div class="copy-right">&copy; SmartCode 2021 - WDD130-16</div>
+    <div class="footer-links">
+      <a href="./site-plan.html">Site Plan</a>
+    </div>
+    <div class="social-media"></div>
+  </footer>
+  <!-- Scripts -->
+  <script>
+    // get the feedback div element so we can do something with it.
+    const feedbackElement = document.getElementById('feedback');
+    // get the form so we can read what was entered in it.
+    const formElement = document.forms[0];
+    // add a 'listener' to wait for a submission of our form. When that happens run the code below.
+    formElement.addEventListener('submit', function(e) {
+        // stop the form from doing the default action
+        e.preventDefault();
+        // set the contents of our feedback element to a message letting the user know the form was submitted successfully. Notice that we pull the name that was entered in the form to personalize the message!
+        feedbackElement.innerHTML = 'Hello '+ formElement.user_name.value +'! Thank you for your message. We will get back with you as soon as possible!';
+        // make the feedback element visible.
+        feedbackElement.style.display = "block";
+        // add a class to move everything down so our message doesn't cover it.
+        document.body.classList.toggle('moveDown');
+    });
+</script>
+</body>
+
+</html>

@@ -1,17 +1,52 @@
 /* Fonts from Google Fonts - more at https://fonts.google.com */
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700');
-@import url('https://fonts.googleapis.com/css?family=Merriweather:400,700');
+/* @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700'); */
+/* @import url('https://fonts.googleapis.com/css?family=Merriweather:400,700'); */
+@import url('https://fonts.googleapis.com/css2?family=Cutive&family=Roboto:wght@100;400;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+}
 
 body {
-  background-color: white;
-  font-family: "Open Sans", sans-serif;
-  padding: 5px 25px;
-  font-size: 18px;
-  margin: 0;
-  color: #444;
+  line-height: 1;
+  font-family: Roboto, sans-serif;
+}
+
+ul, ol {
+  list-style: none;
 }
 
 h1 {
-  font-family: "Merriweather", serif;
+  font-family: Cutive, serif;
   font-size: 32px;
+}
+h2, h3, h4, h5, h6 {
+  font-family: Cutive, serif;
+}
+
+header {
+  /* background-image: url('./img/wireframe_home.jpg'); */
+  background-size: cover;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: auto;
+  max-width: 75%;
+  margin: 0 auto;
+}
+.pic-shadow {
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background-color: rgba(56, 29, 42, .45);
+}
+
+.send-mail {
+  transform: rotate(90deg);
+  width: 20px;
 }
