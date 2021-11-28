@@ -10,54 +10,60 @@
 
 <body>
   <!-- navbar -->
-  <header>
-    <div class="container">
-      <!-- align here -->
-      <div class="logo-box">
-        <img src="./img/landscape_logo.png"
-          alt="SmartCode Logo">
+  <header id="home">
+    <div class="pic-shadow">
+      <!-- navbar -->
+      <div class="navbar">
+        <div class="logo-box">
+          <img src="./img/landscape_logo.png"
+            alt="SmartCode Logo">
+        </div>
+        <nav>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="aboutus.html">About Us</a></li>
+            <li><a href="contactus.html">Contact Us</a></li>
+          </ul>
+        </nav>
       </div>
-      <nav>
-        <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="aboutus.html">About Us</a></li>
-          <li><a href="contactus.html">Contact Us</a></li>
-        </ul>
-      </nav>
+      <!-- hero banner -->
+      <div class="container hero">
+        <h1>More than a web design agency</h1>
+        <p>We pride ourselves on offering a full range of professional web design and development services that bring your business identity to life. We combine creative skills with extensive experience in product and web application development to create powerful digital marketing solutions.</p>
+      </div>
     </div>
-    <div class="container">
-      <h1>More than a web design agency</h1>
-      <p>We pride ourselves on offering a full range of professional web design and development services that bring your business identity to life. We combine creative skills with extensive experience in product and web application development to create powerful digital marketing solutions.</p>
-    </div>
-    <div class="pic-shadow"></div>
   </header>
   <main>
-    <!-- home -->
-    <section class="container">
+    <!-- Services -->
+    <section class="container services">
       <!-- Group 1 -->
-      <img src="./img/web_optimizatioin.png" alt="web optimiced pages" id="group-img-1">
+      <img src="./img/web_optimization.svg" alt="web optimiced pages" id="group-img-1">
       <h3 id="header-1">Optimized Web Pages</h3>
       <p id="paragraph-1">The loading speed of your website will influence its online success. The code developed by our programmers will always be optimized for speed and better indexing for search engines.</p>
       <!-- Group 2 -->
-      <img src="https://via.placeholder.com/100" alt="web optimiced pages" id="group-img-2">
+      <img src="./img/responsiveDesign.svg" alt="web optimiced pages" id="group-img-2">
       <h3 id="header-2">Responsive Web Design</h3>
       <p id="paragraph-2">We will make sure your website looks amazing on any device, using a sleek and responsive design. A website that is not responsive will end up damaging your brand.</p>
       <!-- Group 3 -->
-      <img src="https://via.placeholder.com/100" alt="web optimiced pages" id="group-img-3">
+      <img src="./img/cms_modular_templates.svg" alt="web optimiced pages" id="group-img-3">
       <h3 id="header-3">Content Management (CMS)</h3>
       <p id="paragraph-3">All our web products are built with a content management system that allows you to manage your website, easily updating pages, categories, products, articles, and other sections.</p>
       <!-- Group 4 -->
-      <img src="https://via.placeholder.com/100" alt="web optimiced pages" id="group-img-4">
+      <img src="./img/web_design.svg" alt="web optimiced pages" id="group-img-4">
       <h3 id="header-4">Our key elements of Web Design</h3>
       <p id="paragraph-4">Development of web pages that your clients will remember, using the best tools and paying attention to the little details. Giving to the site an Organic look.</p>
     </section>
-    <section class="container">
-      <img src="./img/website_in_laptop.jpg" alt="eCommerce" id="ecommerce-img" style="max-width: 600px;"> <!-- temp styling to shrink image -->
-      <h2 id="ecommerce-headline">Ecommerce Pages</h2>
-      <p id="ecommerce-p1">Starting an online store is much more effective than selling the old way "offline" because the Internet has no limits. An eCommerce website will have a competitive advantage that will allow you to sell anywhere in the world, 24/7.</p>
-      <p id="ecommerce-p2">At SmartCode we believe that a successful online store has to be better than the competition, and that is why we create our stores using the latest market trends and implement the best tools that your business needs.</p>
-    </section>
-    <section class="container">
+    <!-- eCommerce -->
+    <div id="ecommers_secction_bg">
+      <!-- align here -->
+      <section class="container eCommerce">
+        <img src="./img/website_in_laptop_opt.jpg" alt="eCommerce" id="ecommerce-img">
+        <h2 id="ecommerce-headline">Ecommerce Pages</h2>
+        <p id="ecommerce-p1">Starting an online store is much more effective than selling the old way "offline" because the Internet has no limits. An eCommerce website will have a competitive advantage that will allow you to sell anywhere in the world, 24/7.</p>
+        <p id="ecommerce-p2">At SmartCode we believe that a successful online store has to be better than the competition, and that is why we create our stores using the latest market trends and implement the best tools that your business needs.</p>
+      </section>
+    </div>
+    <section class="container customers">
       <img src="https://i.pravatar.cc/150?img=47" alt="Customer 1" id="avatar-1">
       <h3 id="customer-headline-1">Susan Mayer</h3>
       <p id="customer-brief-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium illum dolore rem praesentium dolorum obcaecati delectus debitis minus nulla autem consequatur ab eos laudantium natus earum explicabo, nam fugit. Earum?</p>
@@ -67,11 +73,17 @@
     </section>
   </main>
   <footer>
-    <div class="copy-right">&copy; SmartCode 2021 - WDD130-16</div>
-    <div class="footer-links">
-      <a href="./site-plan.html">Site Plan</a>
+    <div class="container foot">
+      <div class="copy-right">&copy; SmartCode 2021 - WDD130-16</div>
+      <div class="footer-links">
+        <a href="./site-plan.html">Site Plan</a>
+      </div>
+      <div class="social-media">
+        <a href="https://www.facebook.com"><img class="socialmedia-icons"src="./img/facebook_icon.svg" alt="SmartCode Facebook"></a>
+        <a href="https://instagram.com"><img class="socialmedia-icons"src="./img/instagram_icon.svg" alt="SmartCode Instagram"></a>
+        <a href="https://twitter.com"><img class="socialmedia-icons"src="./img/twitter_icon.svg" alt="SmartCode Twitter"></a>
+      </div>
     </div>
-    <div class="social-media"></div>
   </footer>
 </body>
 
