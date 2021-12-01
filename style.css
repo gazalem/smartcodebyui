@@ -238,15 +238,22 @@ footer {
   align-self: center;
 }
 .footer-links {
-  grid-column: 5;
+  grid-column: 5 / 7;
   grid-row: 2;
   align-self: center;
 }
 .footer-links > a:nth-child(1) {
   text-decoration: none;
+  padding: 1em;
+  background-color: #9D4EDD;
   color: white;
   font-size: 1.3em;
   font-weight: 700;
+}
+.footer-links > a:nth-child(1):hover {
+  background-color: #FE6C00;
+  border-radius: 10px;
+  padding: 1em;
 }
 .social-media {
   grid-column: 10 / 13;
