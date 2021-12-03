@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Card | Alan M.</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Murecho&display=swap" rel="stylesheet">
+    <!-- Custom Styles -->
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            outline: 0;
+            box-sizing: border-box;
+        }
+        article {
+            margin: 2em auto;
+            font-family: Murecho, sans-serif;
+        }
+        img {
+            max-width: 100%;
+        }
+        .card {
+            width: 320px;
+            background-color: white;
+            border-radius: 3px;
+            box-shadow: 0px 0px 60px 10px #888;
+        }
+        .card p {
+            margin-top: 1em;
+            padding: .6em 1em;
+            font-size: 1em;
+        }
+        footer {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            margin: 1em;
+            padding: 1em 0;
+        }
+        footer button {
+            background-color: white;
+            padding: .6em 1.2em;
+            color: #2e2e2e;
+            font-family: Murecho, sans-serif;
+            border: 3px solid #A8A8A8;
+        }
+        footer button:nth-of-type(2) {
+            border-left: 0;
+        }
+        footer button:hover {
+            background-color: #C8C8C8;
+        }
+        footer span {
+            color: #2e2e2e;
+            padding: .6em;
+            grid-column: end;
+        }
+    </style>
+</head>
+<body>
+    <article class="card">
+        <img src="https://picsum.photos/320/240" alt="Random Picture">
+        <p>This is a wider card with supporting text bellow as a natural lead-in to additional content. This content is a little bit longer.</p>
+        <footer>
+            <button class="viewButton">View</button>
+            <button class="editButton">Edit</button>
+            <span>9 mins</span>
+        </footer>
+    </article>
+</body>
+</html>
