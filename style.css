@@ -35,7 +35,9 @@ h2, h3, h4, h5, h6 {
   display: grid;
   grid-template-columns: 200px 1fr;
   align-items: center;
-  background-color: rgba(56, 29, 42, 0.8);
+  /* background-color: rgba(56, 29, 42, 0.8); */
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 20px;
 }
 nav ul {
   display: grid;
@@ -53,7 +55,7 @@ nav a {
 }
 nav li {
  background-color: #62039C;
- padding: 2.3rem;
+ padding: 2.4rem;
  /* border-radius: 0 25px 0 25px; */
 }
 nav li:hover {
@@ -90,7 +92,7 @@ header#home {
   color: white;
 }
 .hero p {
-  grid-column: 5 / 10;
+  grid-column: 5 / 11;
   grid-row: 3 / 6;
   color: white;
   font-size: 1.3em;
@@ -232,7 +234,7 @@ footer {
   gap: 20px;
 }
 .copy-right {
-  grid-column: 1 / 4;
+  grid-column: 1 / 5;
   grid-row: 2;
   font-size: 1.2em;
   align-self: center;
@@ -263,6 +265,92 @@ footer {
 }
 .socialmedia-icons {
   max-width: 55px;
+}
+svg:hover {
+  fill: #166fe5;
+}
+
+/* About Page Styles */
+header#about {
+  background-image: url('./img/teamwork_optimized.jpg');
+  background-size: cover;
+}
+#ourprinciples {
+  grid-template-rows: repeat(9, 100px);
+}
+#ourprinciples h2 {
+  margin-bottom: 20px;
+}
+.aboutheaderlines {
+  grid-column: 2 / 11;
+  grid-row: 2;
+  justify-self: center;
+}
+.aboutheaderlines h6 {
+  text-align: center;
+}
+.ourmission {
+  grid-column: 2 / 4;
+  grid-row: 3;
+}
+.ourvission {
+  grid-column: 6 / 8;
+  grid-row: 3;
+}
+.ourvalues {
+  grid-column: 10 / 12;
+  grid-row: 3;
+}
+#advisory {
+  background-image: url('./img/team_reviewing_work_optimized.jpg');
+  background-size: cover;
+}
+#youradvisor {
+  grid-template-rows: repeat(5, 100px);
+}
+#youradvisor h2 {
+  color: #FFF;
+  grid-column: 8 / 12;
+  grid-row: 2;
+}
+#youradvisor p {
+  color: white;
+  grid-column: 8 / 12;
+  grid-row: 3 / 5;
+}
+#ourteam {
+  grid-template-rows: repeat(11, 60px);
+}
+#ourteam img {
+  border-radius: 50%;
+  box-shadow: 0px 0px 50px 10px #888;
+}
+#ceoquote {
+  grid-column: 5 / 9;
+  grid-row: 2;
+  display: grid;
+}
+#ceoquote img, h3 {
+  justify-self: center;
+  margin: 10px 0;
+}
+#designerquote {
+  grid-column: 2 / 5;
+  grid-row: 6 / 9;
+  display: grid;
+}
+#designerquote img, h3 {
+  justify-self: center;
+  margin: 10px 0;
+}
+#socialmediaquote {
+  grid-column: 9 / 12;
+  grid-row: 6 / 9;
+  display: grid;
+}
+#socialmediaquote img, h3 {
+  justify-self: center;
+  margin: 10px 0;
 }
 
 /* Form response */
