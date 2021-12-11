@@ -418,6 +418,12 @@ button {
   padding: 2em;
   font-size: large;
   border-radius: 10px;
+  background-color: rgba(98, 3, 156, 0.9);
+  color: #FFF;
+}
+button:hover {
+  background-color: #9D4EDD;
+  color: #FFF;
 }
 
 /* Form response */
