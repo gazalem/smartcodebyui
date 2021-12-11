@@ -113,9 +113,18 @@
 
         feedbackElement.style.display = "block"; // make the feedback element visible.
 
-
         document.body.classList.toggle('moveDown'); // add a class to move everything down so our message doesn't cover it.
+        
+        scrollTop(); // Scroll User to the top to see the message
     });
+    // Scroll document to top
+    // Ref: https://www.w3schools.com/howto/howto_js_scroll_to_top.asp
+    function scrollTop() {
+      // This line makeit work on Safari
+      document.body.scrollTop = 0;
+      // This line make it work on Firefox, Chrome, Edge, and Opera
+      document.documentElement.scrollTop = 0;
+    }
   </script>
 </body>
 
