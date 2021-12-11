@@ -1,39 +1,41 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>SmartCode | Home</title>
+  <title>SmartCode | Contact Us</title>
   <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
   <!-- navbar -->
-  <header style="background-image: url('./img/contact_us.jpg');background-size: cover;">
-    <div class="container">
-      <!-- align here -->
-      <div class="logo-box">
-        <img src="./img/landscape_logo.png"
-          alt="SmartCode Logo">
+  <header id="contactus">
+    <div class="pic-shadow">
+      <!-- navbar -->
+      <div class="navbar">
+        <div class="logo-box">
+          <img src="./img/landscape_logo.png"
+            alt="SmartCode Logo">
+        </div>
+        <nav>
+          <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="aboutus.html">About Us</a></li>
+            <li><a href="#">Contact Us</a></li>
+          </ul>
+        </nav>
       </div>
-      <nav>
-        <ul>
-          <li><a href="/">Home</a></li>
-          <li><a href="aboutus.html">About Us</a></li>
-          <li><a href="#">Contact Us</a></li>
-        </ul>
-      </nav>
+      <!-- hero banner -->
+      <div class="container hero">
+        <h1>Contact Us</h1>
+        <p>Keep in touch with our Team.</p>
+      </div>
     </div>
-    <div class="container">
-      <h1>Contact Us</h1>
-      <p>Keep in touch with our Team.</p>
-    </div>
-    <div class="pic-shadow"></div>
   </header>
   <main>
       <section class="container">
-          <div class="card" id="card-1">
+          <div class="card">
             <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
                 <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z" />
               </svg>
@@ -41,14 +43,14 @@
               <p>+507 839-9399<br>
                 +507 6473-3849 </p>
           </div>
-          <div class="card" id="card-2">
+          <div class="card">
             <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
                 <path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd" />
               </svg>
               <h3>Come and Visit Us</h3>
               <p>P.H. Decoder Crypt, Main Street, Condado del Rey, Panama Map</p>
           </div>
-          <div class="card" id="card-3">
+          <div class="card">
             <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
                 <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z" />
                 <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" />
@@ -58,14 +60,14 @@
                 Send us an email. </p>
           </div>
       </section>
-      <section class="container">
-        <h1>Leave Us a Message</h1>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1559.6465330085107!2d-111.78864136155558!3d43.8144800599758!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x53540b06ed1c2345%3A0xcdd4d2833b5fc368!2sNauvoo%20House%20Apartments!5e0!3m2!1ses-419!2spa!4v1637361750504!5m2!1ses-419!2spa" width="600" height="600" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+      <section class="container" id="myForm">
+        <h2>Leave Us a Message</h2>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1559.6465330085107!2d-111.78864136155558!3d43.8144800599758!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x53540b06ed1c2345%3A0xcdd4d2833b5fc368!2sNauvoo%20House%20Apartments!5e0!3m2!1ses-419!2spa!4v1637361750504!5m2!1ses-419!2spa" width="500" height="500" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
         <!-- form -->
-        <form action="POST" id="feedback">
+        <form action="">
           <input type="text" id="fname" name="full_name" placeholder="Full Name">
-          <input type="email" name="email" id="email" placeholder=" username@domain.com">
-          <textarea name="message" id="message" cols="30" rows="5"></textarea>
+          <input type="email" name="email" id="email" placeholder="username@domain.com">
+          <textarea name="message" id="message" cols="30" rows="5" placeholder="your message"></textarea>
           <button>
               <!-- heroicons -->
               <svg xmlns="http://www.w3.org/2000/svg" class="send-mail" viewBox="0 0 20 20" fill="currentColor">
@@ -74,15 +76,21 @@
               <!-- heroicons -->
               Send
           </button>
-      </form>
+        </form>
       </section>
   </main>
   <footer>
-    <div class="copy-right">&copy; SmartCode 2021 - WDD130-16</div>
-    <div class="footer-links">
-      <a href="./site-plan.html">Site Plan</a>
+    <div class="container foot">
+      <div class="copy-right">&copy; SmartCode 2021 - WDD130-16</div>
+      <div class="footer-links">
+        <a href="./site-plan.html">Site Plan</a>
+      </div>
+      <div class="social-media">
+        <a href="https://www.facebook.com"><img class="socialmedia-icons" src="./img/facebook_icon.svg" alt="SmartCode Facebook"></a>
+        <a href="https://instagram.com"><img class="socialmedia-icons" src="./img/instagram_icon.svg" alt="SmartCode Instagram"></a>
+        <a href="https://twitter.com"><img class="socialmedia-icons" src="./img/twitter_icon.svg" alt="SmartCode Twitter"></a>
+      </div>
     </div>
-    <div class="social-media"></div>
   </footer>
 
   <!-- Script to emulate backend behavior -->
