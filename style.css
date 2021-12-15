@@ -281,6 +281,10 @@ svg:hover {
 header#about {
   background-image: url('./img/teamwork_optimized.jpg');
   background-size: cover;
+  /* Paralax effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 #ourprinciples {
   grid-template-rows: repeat(9, 100px);
@@ -311,6 +315,10 @@ header#about {
 #advisory {
   background-image: url('./img/team_reviewing_work_optimized.jpg');
   background-size: cover;
+  /* Paralax effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 #youradvisor {
   grid-template-rows: repeat(5, 100px);
